@@ -1,0 +1,39 @@
+{
+  "name": "@graygate/bot-sdk",
+  "version": "0.1.0",
+  "description": "Runtime SDK for graygate bots — webhook receiver, signature verification, end-to-end encryption.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graygate/bot-sdk.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "graygate-cypher": "^1.0.4",
+    "node-forge": "^1.3.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.0.0",
+    "@types/node-forge": "^1.3.11",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
