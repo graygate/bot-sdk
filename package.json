@@ -7,6 +7,18 @@
     "type": "git",
     "url": "https://github.com/graygate/bot-sdk.git"
   },
+  "homepage": "https://graygate.app/bots/",
+  "bugs": {
+    "url": "https://github.com/graygate/bot-sdk/issues"
+  },
+  "keywords": [
+    "graygate",
+    "bot",
+    "sdk",
+    "webhook",
+    "end-to-end-encryption",
+    "messaging"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -18,8 +30,12 @@
   "engines": {
     "node": ">=20"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run"
   },
