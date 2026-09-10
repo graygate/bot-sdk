@@ -17,13 +17,12 @@ five steps from creating one in the app to answering a message.
 
 ## Install
 
-Until this package is on npm, install it from the repository:
-
 ```bash
-npm install github:graygate/bot-sdk
+npm install @graygate/bot-sdk
 ```
 
-Node 20 or newer.
+Node 20 or newer. To run an unreleased change, install straight from this repository instead —
+`npm install github:graygate/bot-sdk` builds it on the way in.
 
 ## Use
 
